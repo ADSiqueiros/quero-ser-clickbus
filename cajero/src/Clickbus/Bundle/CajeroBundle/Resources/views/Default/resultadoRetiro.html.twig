@@ -1,0 +1,12 @@
+<table id='resultados'>
+	<tr>
+		<th>Denominación</th>
+		<th>Cantidad</th>
+	</tr>
+		{% for elem in retiro %}
+	<tr>
+		<td>{{ elem.denominacion }}</td>
+		<td>{{ elem.cantidad }}</td>
+	</tr>
+	{% endfor %}
+</table>

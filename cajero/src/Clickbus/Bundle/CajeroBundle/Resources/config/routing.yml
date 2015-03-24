@@ -1,0 +1,7 @@
+clickbus_cajero_homepage:
+ pattern:  /
+ defaults: { _controller: ClickbusCajeroBundle:Default:index }
+ 
+clickbus_cajero_retirar:
+ pattern:  /retirar
+ defaults: { _controller: ClickbusCajeroBundle:Default:retirar }

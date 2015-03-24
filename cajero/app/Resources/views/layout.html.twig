@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+ <link href="{{ asset('bundles/clickbuscajero/css/estilos.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div id="cabecera">
+  <h1>Cajero Automático ClickBus</h1>
+</div>
+
+<div id="Menu">
+<hr/>
+  <a href="{{ path('clickbus_cajero_retirar')}}">Retiro de Efectivo</a> |
+  <a href="#">Consultar saldo</a> |
+  <a href="#">Cancelar operación</a>
+  <img id="logo" src="{{ asset('bundles/clickbuscajero/images/clickbus_logo.jpg') }}" />
+</div>
+<hr/>
+
+<div id="contenido">
+{% block contenido %}
+
+{% endblock %}
+</div>
+
+<div id="pie">
+<hr/>
+<div align="center"></div>
+</div>
+
+{% endblock %}
+

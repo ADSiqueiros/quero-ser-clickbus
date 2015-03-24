@@ -1,0 +1,22 @@
+{% extends '::layout.html.twig' %}
+
+{% block contenido %}
+
+<form name="formRetirar" action="{{ path('clickbus_cajero_retirar') }}" method="POST">
+
+	<table>
+		<tr>
+			<td>Cantidad a retirar: $ </td>
+			<td><input type="text" name="cantidad" value="{{ cantidad }}"></td>
+
+			<td><input type="submit" value="Retirar"></td>
+		</tr>
+	</table>
+
+</form>
+<br/>
+{% if resultado %}
+{% include 'ClickbusCajeroBundle:Default:resultadoRetiro.html.twig' with {'retiro': resultado} %}
+{% endif %}
+
+{% endblock %}

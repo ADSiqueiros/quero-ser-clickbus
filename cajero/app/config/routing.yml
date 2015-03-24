@@ -1,0 +1,7 @@
+clickbus_cajero:
+    resource: "@ClickbusCajeroBundle/Resources/config/routing.yml"
+    prefix:   /cajero
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
